@@ -13,32 +13,31 @@
 
             <section>
                 <h5>AOD.NET connection string</h2>
-                    <div><pre class="p-2 text-light bg-dark">
-                            加入 Web.config 檔中
-                            &ltconnectionStrings&gt
-                                連線字串名稱
-                                &ltadd name = "MSSQL_DBconnect"
-                                       連線內容設定        目的伺服器名稱或IP
-                                       connectionString = "Data Source = 127.0.0.1;
-                                                          目的資料庫名稱
-                                                           Initial Catalog = DB_Name;
-                                                          使用人員名稱
-                                                           User ID =DB_Username;
-                                                          人員密碼
-                                                           Password = DB_Password" 
-                                       providerName = "System.Data.SqlClient"/&gt
-                            &lt/connectionStrings&gt
-                                            </pre></div>
-                
+                <pre class="p-3 text-light bg-dark">
+加入 Web.config 檔中
+&ltconnectionStrings&gt
+    連線字串名稱
+    &ltadd name = "MSSQL_DBconnect"
+           連線內容設定        目的伺服器名稱或IP
+           connectionString = "Data Source = 127.0.0.1;
+                              目的資料庫名稱
+                               Initial Catalog = DB_Name;
+                              使用人員名稱
+                               User ID =DB_Username;
+                              人員密碼
+                               Password = DB_Password" 
+           providerName = "System.Data.SqlClient"/&gt
+&lt/connectionStrings&gt
+                </pre>
             </section>
 
             <section>
                 <h5>ASP.NET 中使用 connection string</h5>
-                <pre class="p-2 text-light bg-dark">
+                <pre class="p-3 text-light bg-dark">
 使用 AOD.NET
 using System.Data.SqlClient;
 建立連線物件                                                                    Web.config中的名稱  轉成連線字串
-SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["MSSQL_DBconnect"].ConnectionString);                        
+SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["MSSQL_DBconnect"].ConnectionString);
                 </pre>
             </section>
 
