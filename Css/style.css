@@ -4,11 +4,6 @@ body {
     background: #c7edcc;
 }
 
-section {
-    @include .p-2;
-    @extend .border-left;
-}
-
 .navbar {
     margin-bottom: 1rem;
 }
