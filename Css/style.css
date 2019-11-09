@@ -1,5 +1,14 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
 
+body {
+    background: #c7edcc;
+}
+
+section {
+    @include .p-2;
+    @extend .border-left;
+}
+
 .navbar {
     margin-bottom: 1rem;
 }
